@@ -28,7 +28,7 @@ Assessment Requirements
 
 // }
 
-let NFTS=new Set()
+let NFTs=new Set()
 
 class NFT {
 
@@ -44,7 +44,7 @@ class NFT {
         this.token=num
         
         
-        NFTS.add(this)
+        NFTs.add(this)
       }
       
   }
@@ -54,11 +54,11 @@ class NFT {
     return newNFT
   }
   function listNFTs () {
-    console.log(NFTS)
+    console.log(NFTs)
   }
   function getTotalSupply() {
-    console.log(NFTS.size);
-    return NFTS.size
+    console.log(NFTs.size);
+    return NFTs.size
   }
 
   mintNFT('unicorn',56,2313,undefined)
